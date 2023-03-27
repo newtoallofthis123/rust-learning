@@ -1,5 +1,9 @@
-mod calc;
+mod programs{
+    pub mod system{
+        pub mod sys;
+    }
+}
 
 fn main(){
- calc::calc();
+ programs::system::sys::start();
 }
