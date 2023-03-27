@@ -1,5 +1,5 @@
 // Arrays in rust are fixed length, and homogeneous. They are stack allocated.
-
+use std::mem;
 
 pub fn run(){
     let numbers: [i32; 5] = [1, 2, 3, 4, 5];
@@ -8,7 +8,7 @@ pub fn run(){
     // Get array length
     println!("Array Length: {}", numbers.len());
     // Arrays are stack allocated
-    println!("Array occupies {} bytes", std::mem::size_of_val(&numbers));
+    println!("Array occupies {} bytes", mem::size_of_val(&numbers));
     // Get Slice
     let slice: &[i32] = &numbers[0..2];
     println!("Slice: {:?}", slice);

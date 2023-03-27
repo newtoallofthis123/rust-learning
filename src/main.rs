@@ -1,5 +1,5 @@
-mod arrays;
+mod calc;
 
 fn main(){
-    arrays::run();
+ calc::calc();
 }
